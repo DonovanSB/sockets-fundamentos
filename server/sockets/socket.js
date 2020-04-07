@@ -16,15 +16,15 @@ io.on('connection', (client) => {
     client.on('enviarMensaje', (data, callback) => {
         console.log(data);
 
-        client.broadcast.emit('enviarMensaje', data)
-            // if (mensaje.usuario) {
-            //     callback({
-            //         resp: 'TODO SALIO BIEN!'
-            //     });
-            // } else {
-            //     callback({
-            //         resp: 'TODO SALIO MAL!'
-            //     });
-            // }
+        client.broadcast.emit('enviarMensaje', data);
+        // if (mensaje.usuario) {
+        //     callback({
+        //         resp: 'TODO SALIO BIEN!'
+        //     });
+        // } else {
+        //     callback({
+        //         resp: 'TODO SALIO MAL!'
+        //     });
+        // }
     });
 });
